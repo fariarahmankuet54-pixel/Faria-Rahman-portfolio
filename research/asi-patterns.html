@@ -20,9 +20,9 @@
 
 <style>
 
-/* =========================================================
+/* 
    PROJECT PAGE
-   ========================================================= */
+    */
 
 .project-page {
   max-width: 1000px;
@@ -85,9 +85,9 @@
 }
 
 
-/* =========================================================
+/* 
    INDIVIDUAL PROJECT IMAGES
-   ========================================================= */
+    */
 
 .project-image {
   width: 100%;
@@ -109,9 +109,9 @@
 }
 
 
-/* =========================================================
+/* 
    FIGURE CAPTIONS
-   ========================================================= */
+    */
 
 .figure-title {
   text-align: center;
@@ -130,9 +130,9 @@
 }
 
 
-/* =========================================================
+/* 
    EVALUATION IMAGE LAYOUT
-   ========================================================= */
+    */
 
 .evaluation-item {
   margin-top: 2.5rem;
@@ -144,9 +144,9 @@
 }
 
 
-/* =========================================================
+/* 
    THREE-IMAGE COMPARISON
-   ========================================================= */
+    */
 
 .image-comparison-grid {
   display: flex;
@@ -177,10 +177,39 @@
   color: #111;
 }
 
+/* Two-image resolution comparison */
 
-/* =========================================================
+.resolution-comparison-grid {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.resolution-comparison-item {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.resolution-comparison-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+}
+
+.resolution-comparison-item .figure-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  color: #111;
+}
+/* 
    RESULTS TABLE
-   ========================================================= */
+    */
 
 .result-table {
   width: 100%;
@@ -201,9 +230,9 @@
 }
 
 
-/* =========================================================
+/* 
    HIGHLIGHTED RESULT
-   ========================================================= */
+    */
 
 .result-highlight {
   margin: 1.5rem 0;
@@ -213,9 +242,9 @@
 }
 
 
-/* =========================================================
+/* 
    TOOLS
-   ========================================================= */
+    */
 
 .tools {
   color: #555;
@@ -223,9 +252,9 @@
 }
 
 
-/* =========================================================
+/* 
    REPORT BUTTON
-   ========================================================= */
+    */
 
 .report-button {
   display: inline-block;
@@ -243,9 +272,9 @@
 }
 
 
-/* =========================================================
+/* 
    MOBILE
-   ========================================================= */
+    */
 
 @media (max-width: 700px) {
 
@@ -270,7 +299,16 @@
   .image-comparison-item {
     width: 100%;
   }
-
+   .resolution-comparison-grid {
+  flex-direction: column;
+}
+   .resolution-comparison-item {
+  width: 100%;
+}
+   
+   
+   
+ 
 }
 
 </style>
@@ -536,57 +574,44 @@
 
   </div>
 
-  <!-- ===================================================
-       AXIAL PROFILE
-       =================================================== -->
+<!-- ===================================================
+     AXIAL AND LATERAL FWHM COMPARISON
+     =================================================== -->
 
-  <div class="evaluation-item">
+<div class="resolution-comparison-grid">
 
-```
-<h3>
-  Axial Resolution — FWHM
-</h3>
 
-<img
-  src="../Axial_resolution.png"
-  alt="Axial resolution profile comparing ultrasound imaging methods"
-  class="evaluation-image">
+  <!-- AXIAL FWHM -->
 
-<div class="figure-caption">
-  Axial intensity profiles through the wire target. FWHM is used as a
-  quantitative measure of the axial spatial response. A smaller FWHM
-  indicates a narrower response and therefore better axial resolution
-  under the evaluated condition.
-</div>
-```
+  <div class="resolution-comparison-item">
+
+    <img
+      src="../Axial_resolution.png"
+      alt="Axial FWHM resolution profile comparing ultrasound imaging methods">
+
+    <div class="figure-title">
+      Axial FWHM
+    </div>
 
   </div>
 
-  <!-- ===================================================
-       LATERAL PROFILE
-       =================================================== -->
 
-  <div class="evaluation-item">
+  <!-- LATERAL FWHM -->
 
-```
-<h3>
-  Lateral Resolution — FWHM
-</h3>
+  <div class="resolution-comparison-item">
 
-<img
-  src="../Lateral_resolution.png"
-  alt="Lateral resolution profile comparing ultrasound imaging methods"
-  class="evaluation-image">
+    <img
+      src="../Lateral_resolution.png"
+      alt="Lateral FWHM resolution profile comparing ultrasound imaging methods">
 
-<div class="figure-caption">
-  Lateral intensity profiles through the wire target. FWHM is used as a
-  quantitative measure of the lateral spatial response. A smaller FWHM
-  indicates a narrower response and therefore better lateral resolution
-  under the evaluated condition.
-</div>
-```
+    <div class="figure-title">
+      Lateral FWHM
+    </div>
 
   </div>
+
+
+</div>
 
 </section>
 
