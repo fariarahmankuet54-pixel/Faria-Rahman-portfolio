@@ -1,11 +1,12 @@
 <!doctype html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <meta name="description"
-      content="Multi-Beam Acoustic Structured Illumination — implementation and evaluation using phase-retrieval algorithms for ultrasound imaging.">
+   content="Multi-Beam Acoustic Structured Illumination — implementation and evaluation using phase-retrieval algorithms for ultrasound imaging.">
 
 <title>Multi-Beam Acoustic Structured Illumination | Faria Rahman</title>
 
@@ -18,6 +19,10 @@
 <link rel="stylesheet" href="../style.css">
 
 <style>
+
+/* =========================================================
+   PROJECT PAGE
+   ========================================================= */
 
 .project-page {
   max-width: 1000px;
@@ -80,7 +85,9 @@
 }
 
 
-/* Individual project images */
+/* =========================================================
+   INDIVIDUAL PROJECT IMAGES
+   ========================================================= */
 
 .project-image {
   width: 100%;
@@ -91,7 +98,7 @@
 }
 
 
-/* Smaller images for individual phantom results */
+/* Smaller images for individual results */
 
 .evaluation-image {
   width: 100%;
@@ -102,7 +109,9 @@
 }
 
 
-/* Figure captions */
+/* =========================================================
+   FIGURE CAPTIONS
+   ========================================================= */
 
 .figure-title {
   text-align: center;
@@ -121,7 +130,9 @@
 }
 
 
-/* Evaluation image layout */
+/* =========================================================
+   EVALUATION IMAGE LAYOUT
+   ========================================================= */
 
 .evaluation-item {
   margin-top: 2.5rem;
@@ -133,7 +144,43 @@
 }
 
 
-/* Results table */
+/* =========================================================
+   THREE-IMAGE COMPARISON
+   ========================================================= */
+
+.image-comparison-grid {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.image-comparison-item {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.image-comparison-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+}
+
+.image-comparison-item .figure-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  color: #111;
+}
+
+
+/* =========================================================
+   RESULTS TABLE
+   ========================================================= */
 
 .result-table {
   width: 100%;
@@ -154,7 +201,9 @@
 }
 
 
-/* Highlighted result */
+/* =========================================================
+   HIGHLIGHTED RESULT
+   ========================================================= */
 
 .result-highlight {
   margin: 1.5rem 0;
@@ -164,7 +213,9 @@
 }
 
 
-/* Tools */
+/* =========================================================
+   TOOLS
+   ========================================================= */
 
 .tools {
   color: #555;
@@ -172,7 +223,9 @@
 }
 
 
-/* Report button */
+/* =========================================================
+   REPORT BUTTON
+   ========================================================= */
 
 .report-button {
   display: inline-block;
@@ -190,7 +243,9 @@
 }
 
 
-/* Mobile */
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -206,51 +261,63 @@
     font-size: 0.9rem;
   }
 
+  /* Stack the three comparison images on small screens */
+
+  .image-comparison-grid {
+    flex-direction: column;
+  }
+
+  .image-comparison-item {
+    width: 100%;
+  }
+
 }
 
 </style>
+
 </head>
 
-
 <body>
-
 
 <header>
 
   <div class="nav">
 
-    <a class="brand" href="../index.html">
-      Faria Rahman
-    </a>
+```
+<a class="brand" href="../index.html">
+  Faria Rahman
+</a>
 
-    <nav>
-      <a href="../index.html#about">About</a>
-      <a href="../index.html#research">Research</a>
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#experience">Professional Experience</a>
-      <a href="../index.html#skills">Skills</a>
-      <a href="../index.html#leadership">Leadership &amp; Activities</a>
-      <a href="../index.html#education">Education</a>
-      <a href="../index.html#contact">Contact</a>
-      <a href="../index.html#miscellaneous">Miscellaneous</a>
-    </nav>
+<nav>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#research">Research</a>
+  <a href="../index.html#projects">Projects</a>
+  <a href="../index.html#experience">Professional Experience</a>
+  <a href="../index.html#skills">Skills</a>
+  <a href="../index.html#leadership">Leadership &amp; Activities</a>
+  <a href="../index.html#education">Education</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#miscellaneous">Miscellaneous</a>
+</nav>
+```
 
   </div>
 
 </header>
 
-
 <main class="project-page">
 
-
-<!-- BACK LINK -->
+<!-- =====================================================
+     BACK LINK
+     ===================================================== -->
 
 <a class="back-link" href="../index.html#research">
   ← Back to Research
 </a>
 
-
-<!-- PROJECT TITLE -->
+<!-- =====================================================
+     PROJECT TITLE
+     ===================================================== -->
 
 <section class="project-header">
 
@@ -270,8 +337,9 @@
 
 </section>
 
-
-<!-- OVERVIEW -->
+<!-- =====================================================
+     OVERVIEW
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -294,8 +362,9 @@
 
 </section>
 
-
-<!-- OBJECTIVE -->
+<!-- =====================================================
+     OBJECTIVE
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -310,13 +379,13 @@
 
 </section>
 
-
-<!-- APPROACH -->
+<!-- =====================================================
+     APPROACH
+     ===================================================== -->
 
 <section class="project-section">
 
   <h2>Approach</h2>
-
 
   <h3>1. Multi-Beam ASI Pattern Generation</h3>
 
@@ -327,7 +396,6 @@
     acoustic illumination patterns.
   </p>
 
-
   <h3>2. Acoustic Field Simulation</h3>
 
   <p>
@@ -337,7 +405,6 @@
     characteristics before hardware validation.
   </p>
 
-
   <h3>3. Ultrasound Acquisition and Processing</h3>
 
   <p>
@@ -346,7 +413,6 @@
     ultrasound IQ data to generate ASI-based image reconstructions.
   </p>
 
-
   <h3>4. Comparison with Plane-Wave Imaging</h3>
 
   <p>
@@ -354,7 +420,6 @@
     Reconstructed images were evaluated under corresponding experimental
     conditions to assess differences in spatial resolution.
   </p>
-
 
   <h3>5. Quantitative Evaluation</h3>
 
@@ -365,8 +430,9 @@
 
 </section>
 
-
-<!-- ASI PATTERN -->
+<!-- =====================================================
+     ASI PATTERN
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -378,12 +444,10 @@
     simulation before experimental imaging.
   </p>
 
-
-  <img
-    src="../TXPD_DeltaD_0.80mm.png"
-    alt="Multi-beam Acoustic Structured Illumination pattern"
-    class="project-image">
-
+<img
+ src="../TXPD_DeltaD_0.80mm.png"
+ alt="Multi-beam Acoustic Structured Illumination pattern"
+ class="project-image">
 
   <div class="figure-title">
     Multi-Beam Acoustic Structured Illumination Pattern
@@ -396,8 +460,9 @@
 
 </section>
 
-
-<!-- EXPERIMENTAL EVALUATION -->
+<!-- =====================================================
+     EXPERIMENTAL EVALUATION
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -417,118 +482,117 @@
     quantitatively compare the spatial response.
   </p>
 
+  <!-- ===================================================
+       THREE PHANTOM IMAGES SIDE-BY-SIDE
+       =================================================== -->
 
-  <!-- LOW-RESOLUTION PHANTOM IMAGE -->
+  <div class="image-comparison-grid">
 
-  <div class="evaluation-item">
+```
+<!-- LOW RESOLUTION IMAGE -->
 
-    <h3>
-      Low-Resolution Phantom Image
-    </h3>
+<div class="image-comparison-item">
 
-    <img
-      src="../Low_resolution_wire_phantom_image.png"
-      alt="Low-resolution wire phantom ultrasound image"
-      class="evaluation-image">
+  <img
+    src="../Low_resolution_wire_phantom_image.png"
+    alt="Low-resolution wire phantom ultrasound image">
 
-    <div class="figure-caption">
-      Low-resolution ultrasound image of the wire phantom used as the
-      baseline imaging result.
-    </div>
+  <div class="figure-title">
+    Low resolution image
+  </div>
+
+</div>
+
+
+<!-- PLANE WAVE IMAGE -->
+
+<div class="image-comparison-item">
+
+  <img
+    src="../Plane_wave_wirephantom_image.png"
+    alt="Plane-wave wire phantom ultrasound image">
+
+  <div class="figure-title">
+    Plane wave image
+  </div>
+
+</div>
+
+
+<!-- ASI IMAGE -->
+
+<div class="image-comparison-item">
+
+  <img
+    src="../ASI_Wire_phantom_image.png"
+    alt="Acoustic Structured Illumination wire phantom ultrasound image">
+
+  <div class="figure-title">
+    Structured illuminated image
+  </div>
+
+</div>
+```
 
   </div>
 
-
-  <!-- PLANE WAVE PHANTOM IMAGE -->
+  <!-- ===================================================
+       AXIAL PROFILE
+       =================================================== -->
 
   <div class="evaluation-item">
 
-    <h3>
-      Plane-Wave Phantom Image
-    </h3>
+```
+<h3>
+  Axial Resolution — FWHM
+</h3>
 
-    <img
-      src="../Plane_wave_wirephantom_image.png"
-      alt="Plane-wave wire phantom ultrasound image"
-      class="evaluation-image">
+<img
+  src="../Axial_resolution.png"
+  alt="Axial resolution profile comparing ultrasound imaging methods"
+  class="evaluation-image">
 
-    <div class="figure-caption">
-      Plane-wave ultrasound reconstruction of the wire phantom used as a
-      comparison with the ASI reconstruction.
-    </div>
+<div class="figure-caption">
+  Axial intensity profiles through the wire target. FWHM is used as a
+  quantitative measure of the axial spatial response. A smaller FWHM
+  indicates a narrower response and therefore better axial resolution
+  under the evaluated condition.
+</div>
+```
 
   </div>
 
-
-  <!-- ASI PHANTOM IMAGE -->
-
-  <div class="evaluation-item">
-
-    <h3>
-      ASI Phantom Image
-    </h3>
-
-    <img
-      src="../ASI_Wire_phantom_image.png"
-      alt="Acoustic Structured Illumination wire phantom ultrasound image"
-      class="evaluation-image">
-
-    <div class="figure-caption">
-      Acoustic Structured Illumination reconstruction of the wire phantom.
-    </div>
-
-  </div>
-
-
-  <!-- AXIAL PROFILE -->
+  <!-- ===================================================
+       LATERAL PROFILE
+       =================================================== -->
 
   <div class="evaluation-item">
 
-    <h3>
-      Axial Resolution — FWHM
-    </h3>
+```
+<h3>
+  Lateral Resolution — FWHM
+</h3>
 
-    <img
-      src="../Axial_resolution.png"
-      alt="Axial resolution profile comparing ultrasound imaging methods"
-      class="evaluation-image">
+<img
+  src="../Lateral_resolution.png"
+  alt="Lateral resolution profile comparing ultrasound imaging methods"
+  class="evaluation-image">
 
-    <div class="figure-caption">
-      Axial intensity profiles through the wire target. FWHM is used as a
-      quantitative measure of the axial spatial response. A smaller FWHM
-      indicates a narrower response and therefore better axial resolution
-      under the evaluated condition.
-    </div>
-
-  </div>
-
-
-  <!-- LATERAL PROFILE -->
-
-  <div class="evaluation-item">
-
-    <h3>
-      Lateral Resolution — FWHM
-    </h3>
-
-    <img
-      src="../Lateral_resolution.png"
-      alt="Lateral resolution profile comparing ultrasound imaging methods"
-      class="evaluation-image">
-
-    <div class="figure-caption">
-      Lateral intensity profiles through the wire target. FWHM is used as a
-      quantitative measure of the lateral spatial response. A smaller FWHM
-      indicates a narrower response and therefore better lateral resolution
-      under the evaluated condition.
-    </div>
+<div class="figure-caption">
+  Lateral intensity profiles through the wire target. FWHM is used as a
+  quantitative measure of the lateral spatial response. A smaller FWHM
+  indicates a narrower response and therefore better lateral resolution
+  under the evaluated condition.
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- RESULTS -->
+<!-- =====================================================
+     RESULTS
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -542,49 +606,50 @@
     plane-wave result.
   </p>
 
-
   <table class="result-table">
 
-    <thead>
+```
+<thead>
 
-      <tr>
-        <th>Metric</th>
-        <th>Plane Wave</th>
-        <th>ASI</th>
-      </tr>
+  <tr>
+    <th>Metric</th>
+    <th>Plane Wave</th>
+    <th>ASI</th>
+  </tr>
 
-    </thead>
+</thead>
 
-    <tbody>
+<tbody>
 
-      <tr>
-        <td>Lateral FWHM</td>
-        <td>501 μm</td>
-        <td><strong>425 μm</strong></td>
-      </tr>
+  <tr>
+    <td>Lateral FWHM</td>
+    <td>501 μm</td>
+    <td><strong>425 μm</strong></td>
+  </tr>
 
-      <tr>
-        <td>Axial FWHM</td>
-        <td>202 μm</td>
-        <td><strong>144 μm</strong></td>
-      </tr>
+  <tr>
+    <td>Axial FWHM</td>
+    <td>202 μm</td>
+    <td><strong>144 μm</strong></td>
+  </tr>
 
-    </tbody>
+</tbody>
+```
 
   </table>
 
-
   <div class="result-highlight">
 
-    <strong>Example experimental result:</strong>
-    Under the evaluated phantom condition, ASI produced a measured lateral
-    FWHM of approximately <strong>425&nbsp;μm</strong> compared with
-    <strong>501&nbsp;μm</strong> for plane-wave imaging. The measured axial
-    FWHM was approximately <strong>144&nbsp;μm</strong> for ASI compared
-    with <strong>202&nbsp;μm</strong> for plane-wave imaging.
+```
+<strong>Example experimental result:</strong>
+Under the evaluated phantom condition, ASI produced a measured lateral
+FWHM of approximately <strong>425&nbsp;μm</strong> compared with
+<strong>501&nbsp;μm</strong> for plane-wave imaging. The measured axial
+FWHM was approximately <strong>144&nbsp;μm</strong> for ASI compared
+with <strong>202&nbsp;μm</strong> for plane-wave imaging.
+```
 
   </div>
-
 
   <p>
     FWHM (Full Width at Half Maximum) was used as a quantitative measure of
@@ -595,8 +660,9 @@
 
 </section>
 
-
-<!-- MY CONTRIBUTION -->
+<!-- =====================================================
+     MY CONTRIBUTION
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -604,45 +670,48 @@
 
   <ul>
 
-    <li>
-      Implemented multi-beam ASI pattern generation using established
-      phase-retrieval algorithms.
-    </li>
+```
+<li>
+  Implemented multi-beam ASI pattern generation using established
+  phase-retrieval algorithms.
+</li>
 
-    <li>
-      Implemented simulation workflows for evaluating acoustic illumination
-      patterns.
-    </li>
+<li>
+  Implemented simulation workflows for evaluating acoustic illumination
+  patterns.
+</li>
 
-    <li>
-      Implemented ASI image reconstruction and processing from ultrasound
-      IQ data.
-    </li>
+<li>
+  Implemented ASI image reconstruction and processing from ultrasound
+  IQ data.
+</li>
 
-    <li>
-      Conducted phantom-based hardware experiments using a Verasonics
-      Vantage ultrasound research system.
-    </li>
+<li>
+  Conducted phantom-based hardware experiments using a Verasonics
+  Vantage ultrasound research system.
+</li>
 
-    <li>
-      Extracted axial and lateral intensity profiles from reconstructed
-      images.
-    </li>
+<li>
+  Extracted axial and lateral intensity profiles from reconstructed
+  images.
+</li>
 
-    <li>
-      Evaluated spatial resolution using FWHM measurements.
-    </li>
+<li>
+  Evaluated spatial resolution using FWHM measurements.
+</li>
 
-    <li>
-      Compared ASI imaging performance with plane-wave imaging.
-    </li>
+<li>
+  Compared ASI imaging performance with plane-wave imaging.
+</li>
+```
 
   </ul>
 
 </section>
 
-
-<!-- TOOLS -->
+<!-- =====================================================
+     TOOLS
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -656,8 +725,9 @@
 
 </section>
 
-
-<!-- PROJECT DOCUMENTATION -->
+<!-- =====================================================
+     PROJECT DOCUMENTATION
+     ===================================================== -->
 
 <section class="project-section">
 
@@ -674,14 +744,11 @@
 
 </section>
 
-
 </main>
-
 
 <footer>
   © 2026 Faria Rahman · Electrical &amp; Computer Engineering · University of Oklahoma
 </footer>
-
 
 <script src="../script.js"></script>
 
