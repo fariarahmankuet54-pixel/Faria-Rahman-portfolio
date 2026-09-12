@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="description"
+      content="Multi-Beam Acoustic Structured Illumination — implementation and evaluation using phase-retrieval algorithms for ultrasound imaging.">
+
+<title>Multi-Beam Acoustic Structured Illumination | Faria Rahman</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.project-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.project-header {
+  margin-bottom: 2.5rem;
+}
+
+.project-header h1 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 2.35rem;
+  line-height: 1.25;
+  margin-bottom: 0.8rem;
+}
+
+.project-header .meta {
+  color: #777;
+  font-size: 1rem;
+}
+
+.project-header .tags {
+  margin-top: 1rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.project-section {
+  margin-top: 2.8rem;
+}
+
+.project-section h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.55rem;
+  margin-bottom: 1rem;
+}
+
+.project-section h3 {
+  font-size: 1.15rem;
+  margin-top: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-section p {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.project-section ul {
+  line-height: 1.75;
+  padding-left: 1.4rem;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 950px;
+  display: block;
+  margin: 1.5rem auto 0.6rem;
+  border: 1px solid #ddd;
+}
+
+.figure-caption {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.result-table th {
+  font-weight: 600;
+  background: #f7f7f7;
+}
+
+.result-highlight {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.4rem;
+  border-left: 4px solid #0066cc;
+  background: #f7f9fc;
+}
+
+.tools {
+  color: #555;
+  line-height: 1.8;
+}
+
+.report-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.report-button:hover {
+  background: #0066cc;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .project-page {
+    padding: 2rem 1rem 4rem;
+  }
+
+  .project-header h1 {
+    font-size: 1.8rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="../index.html">Faria Rahman</a>
+
+    <nav>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Professional Experience</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#leadership">Leadership &amp; Activities</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../index.html#miscellaneous">Miscellaneous</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="project-page">
+
+<a class="back-link" href="../index.html#research">← Back to Research</a>
+
+
+<!-- PROJECT HEADER -->
+<section class="project-header">
+
+  <h1>
+    Multi-Beam Acoustic Structured Illumination:
+    Implementation and Evaluation
+  </h1>
+
+  <div class="meta">
+    University of Oklahoma · Graduate Research
+  </div>
+
+  <div class="tags">
+    Ultrasound Imaging · Acoustic Structured Illumination · Phase Retrieval ·
+    Beamforming · Signal Processing
+  </div>
+
+</section>
+
+
+<!-- OVERVIEW -->
+<section class="project-section">
+
+  <h2>Overview</h2>
+
+  <p>
+    Acoustic Structured Illumination (ASI) was investigated as an approach
+    for improving ultrasound image resolution through multi-beam acoustic
+    illumination. I implemented and evaluated multi-beam ASI patterns using
+    established phase-retrieval methods, including the Gerchberg–Saxton and
+    STAR algorithms.
+  </p>
+
+  <p>
+    The imaging workflow was investigated through simulation and
+    hardware-based phantom experiments. The resulting images were evaluated
+    using quantitative measures of spatial resolution and compared with
+    plane-wave imaging.
+  </p>
+
+</section>
+
+
+<!-- OBJECTIVE -->
+<section class="project-section">
+
+  <h2>Objective</h2>
+
+  <p>
+    The objective was to investigate the feasibility of multi-beam acoustic
+    structured illumination for high-resolution ultrasound imaging and
+    evaluate its imaging performance relative to conventional plane-wave
+    imaging.
+  </p>
+
+</section>
+
+
+<!-- APPROACH -->
+<section class="project-section">
+
+  <h2>Approach</h2>
+
+  <h3>1. Multi-beam ASI pattern generation</h3>
+
+  <p>
+    Implemented multi-beam acoustic structured illumination pattern
+    generation using established phase-retrieval algorithms. Gerchberg–Saxton
+    and STAR-based approaches were evaluated for generating the desired
+    acoustic illumination patterns.
+  </p>
+
+
+  <h3>2. Acoustic field simulation</h3>
+
+  <p>
+    Simulated acoustic fields to investigate the generated illumination
+    patterns at different beam separations and imaging depths. The simulated
+    pressure fields were used to examine beam structure and spatial
+    characteristics before hardware validation.
+  </p>
+
+
+  <h3>3. Ultrasound acquisition and processing</h3>
+
+  <p>
+    Implemented the ASI imaging workflow using a Verasonics Vantage
+    ultrasound research system. Acquired ultrasound data and processed the
+    resulting IQ data to generate low-resolution and ASI-based image
+    reconstructions.
+  </p>
+
+
+  <h3>4. Comparison with plane-wave imaging</h3>
+
+  <p>
+    Multi-angle plane-wave imaging was used as a comparison method.
+    Reconstructed images were evaluated under corresponding experimental
+    conditions to assess differences in spatial resolution.
+  </p>
+
+
+  <h3>5. Quantitative evaluation</h3>
+
+  <p>
+    Imaging performance was evaluated using axial and lateral intensity
+    profiles and full width at half maximum (FWHM) measurements.
+  </p>
+
+</section>
+
+
+<!-- ASI PATTERN IMAGE -->
+<section class="project-section">
+
+  <h2>ASI Pattern Generation</h2>
+
+  <p>
+    The generated acoustic structured illumination patterns were evaluated
+    before experimental imaging. The patterns were designed to produce
+    multiple spatially separated acoustic beams for structured illumination.
+  </p>
+
+  <img
+    src="../TXPD_DeltaD_0.80mm.png"
+    alt="Acoustic Structured Illumination pattern"
+    class="project-image">
+
+  <div class="figure-caption">
+    Example multi-beam Acoustic Structured Illumination pattern.
+  </div>
+
+</section>
+
+
+<!-- EXPERIMENTAL VALIDATION -->
+<section class="project-section">
+
+  <h2>Experimental Validation</h2>
+
+  <p>
+    The ASI approach was experimentally evaluated using a wire phantom and
+    a Verasonics Vantage ultrasound research system. A 50&nbsp;μm wire target
+    positioned at approximately 15&nbsp;mm depth was used to evaluate the
+    spatial response.
+  </p>
+
+  <p>
+    ASI reconstruction was compared with low-resolution and plane-wave
+    imaging. Axial and lateral profiles were extracted through the target,
+    and FWHM was used as a quantitative measure of the response width.
+  </p>
+
+
+  <!--
+    Put your phantom-validation screenshot/image in this folder:
+    
+    research/images/asi-validation.png
+    
+    Then the image below will display it.
+  -->
+
+  <img
+    src="images/asi-validation.png"
+    alt="ASI validation through phantom imaging"
+    class="project-image">
+
+  <div class="figure-caption">
+    ASI validation through phantom imaging. Comparison of low-resolution,
+    ASI, and plane-wave responses for a 50&nbsp;μm wire phantom.
+  </div>
+
+</section>
+
+
+<!-- RESULTS -->
+<section class="project-section">
+
+  <h2>Results</h2>
+
+  <p>
+    For the evaluated phantom condition at approximately 15&nbsp;mm depth
+    and a beam separation of Δd&nbsp;=&nbsp;0.48&nbsp;mm, the ASI reconstruction
+    produced narrower measured axial and lateral responses than the
+    corresponding plane-wave result.
+  </p>
+
+
+  <table class="result-table">
+
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <th>Plane Wave</th>
+        <th>ASI</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Lateral FWHM</td>
+        <td>501 μm</td>
+        <td><strong>425 μm</strong></td>
+      </tr>
+
+      <tr>
+        <td>Axial FWHM</td>
+        <td>202 μm</td>
+        <td><strong>144 μm</strong></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+
+  <div class="result-highlight">
+
+    <strong>Example experimental result:</strong>
+    ASI reduced the measured lateral FWHM from approximately
+    501&nbsp;μm to 425&nbsp;μm and the axial FWHM from approximately
+    202&nbsp;μm to 144&nbsp;μm under the evaluated phantom condition.
+
+  </div>
+
+  <p>
+    Lower FWHM corresponds to a narrower spatial response and indicates
+    improved spatial resolution for the evaluated condition.
+  </p>
+
+</section>
+
+
+<!-- MY CONTRIBUTION -->
+<section class="project-section">
+
+  <h2>My Contribution</h2>
+
+  <ul>
+
+    <li>
+      Implemented multi-beam ASI pattern generation using established
+      phase-retrieval algorithms.
+    </li>
+
+    <li>
+      Implemented simulation workflows for evaluating acoustic illumination
+      patterns.
+    </li>
+
+    <li>
+      Implemented ASI image reconstruction and processing from ultrasound
+      IQ data.
+    </li>
+
+    <li>
+      Conducted phantom-based hardware experiments using a Verasonics
+      Vantage ultrasound research system.
+    </li>
+
+    <li>
+      Evaluated imaging performance using axial and lateral FWHM
+      measurements.
+    </li>
+
+    <li>
+      Compared ASI imaging performance with multi-angle plane-wave imaging.
+    </li>
+
+  </ul>
+
+</section>
+
+
+<!-- TOOLS -->
+<section class="project-section">
+
+  <h2>Tools &amp; Technologies</h2>
+
+  <p class="tools">
+    MATLAB · Verasonics Vantage · Ultrasound Imaging · Acoustic Structured
+    Illumination · Gerchberg–Saxton · STAR · Phase Retrieval · Beamforming ·
+    Signal Processing · Phantom Imaging
+  </p>
+
+</section>
+
+
+<!-- FULL REPORT -->
+<section class="project-section">
+
+  <h2>Project Documentation</h2>
+
+  <p>
+    The complete project documentation contains additional simulation,
+    experimental, and imaging results.
+  </p>
+
+  <a class="report-button" href="report.pdf">
+    View Full Report (PDF) →
+  </a>
+
+</section>
+
+</main>
+
+
+<footer>
+  © 2026 Faria Rahman · Electrical &amp; Computer Engineering · University of Oklahoma
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
