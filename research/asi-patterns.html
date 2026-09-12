@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="../style.css">
 
 <style>
+
 .project-page {
   max-width: 1000px;
   margin: 0 auto;
@@ -78,6 +79,9 @@
   padding-left: 1.4rem;
 }
 
+
+/* Individual project images */
+
 .project-image {
   width: 100%;
   max-width: 950px;
@@ -86,12 +90,50 @@
   border: 1px solid #ddd;
 }
 
+
+/* Smaller images for individual phantom results */
+
+.evaluation-image {
+  width: 100%;
+  max-width: 850px;
+  display: block;
+  margin: 1.5rem auto 0.6rem;
+  border: 1px solid #ddd;
+}
+
+
+/* Figure captions */
+
+.figure-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
 .figure-caption {
   text-align: center;
   color: #777;
   font-size: 0.9rem;
+  line-height: 1.5;
   margin-bottom: 2rem;
 }
+
+
+/* Evaluation image layout */
+
+.evaluation-item {
+  margin-top: 2.5rem;
+}
+
+.evaluation-item h3 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Results table */
 
 .result-table {
   width: 100%;
@@ -111,6 +153,9 @@
   background: #f7f7f7;
 }
 
+
+/* Highlighted result */
+
 .result-highlight {
   margin: 1.5rem 0;
   padding: 1.2rem 1.4rem;
@@ -118,10 +163,16 @@
   background: #f7f9fc;
 }
 
+
+/* Tools */
+
 .tools {
   color: #555;
   line-height: 1.8;
 }
+
+
+/* Report button */
 
 .report-button {
   display: inline-block;
@@ -138,7 +189,11 @@
   color: white;
 }
 
+
+/* Mobile */
+
 @media (max-width: 700px) {
+
   .project-page {
     padding: 2rem 1rem 4rem;
   }
@@ -146,15 +201,27 @@
   .project-header h1 {
     font-size: 1.8rem;
   }
+
+  .result-table {
+    font-size: 0.9rem;
+  }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
+
 <header>
+
   <div class="nav">
-    <a class="brand" href="../index.html">Faria Rahman</a>
+
+    <a class="brand" href="../index.html">
+      Faria Rahman
+    </a>
 
     <nav>
       <a href="../index.html#about">About</a>
@@ -167,16 +234,24 @@
       <a href="../index.html#contact">Contact</a>
       <a href="../index.html#miscellaneous">Miscellaneous</a>
     </nav>
+
   </div>
+
 </header>
 
 
 <main class="project-page">
 
-<a class="back-link" href="../index.html#research">← Back to Research</a>
+
+<!-- BACK LINK -->
+
+<a class="back-link" href="../index.html#research">
+  ← Back to Research
+</a>
 
 
-<!-- PROJECT HEADER -->
+<!-- PROJECT TITLE -->
+
 <section class="project-header">
 
   <h1>
@@ -189,14 +264,15 @@
   </div>
 
   <div class="tags">
-    Ultrasound Imaging · Acoustic Structured Illumination · Phase Retrieval ·
-    Beamforming · Signal Processing
+    Ultrasound Imaging · Acoustic Structured Illumination ·
+    Phase Retrieval · Beamforming · Signal Processing
   </div>
 
 </section>
 
 
 <!-- OVERVIEW -->
+
 <section class="project-section">
 
   <h2>Overview</h2>
@@ -220,13 +296,14 @@
 
 
 <!-- OBJECTIVE -->
+
 <section class="project-section">
 
   <h2>Objective</h2>
 
   <p>
-    The objective was to investigate the feasibility of multi-beam acoustic
-    structured illumination for high-resolution ultrasound imaging and
+    The objective was to investigate the feasibility of multi-beam Acoustic
+    Structured Illumination for high-resolution ultrasound imaging and
     evaluate its imaging performance relative to conventional plane-wave
     imaging.
   </p>
@@ -235,21 +312,23 @@
 
 
 <!-- APPROACH -->
+
 <section class="project-section">
 
   <h2>Approach</h2>
 
-  <h3>1. Multi-beam ASI pattern generation</h3>
+
+  <h3>1. Multi-Beam ASI Pattern Generation</h3>
 
   <p>
-    Implemented multi-beam acoustic structured illumination pattern
+    Implemented multi-beam Acoustic Structured Illumination pattern
     generation using established phase-retrieval algorithms. Gerchberg–Saxton
     and STAR-based approaches were evaluated for generating the desired
     acoustic illumination patterns.
   </p>
 
 
-  <h3>2. Acoustic field simulation</h3>
+  <h3>2. Acoustic Field Simulation</h3>
 
   <p>
     Simulated acoustic fields to investigate the generated illumination
@@ -259,17 +338,16 @@
   </p>
 
 
-  <h3>3. Ultrasound acquisition and processing</h3>
+  <h3>3. Ultrasound Acquisition and Processing</h3>
 
   <p>
     Implemented the ASI imaging workflow using a Verasonics Vantage
-    ultrasound research system. Acquired ultrasound data and processed the
-    resulting IQ data to generate low-resolution and ASI-based image
-    reconstructions.
+    ultrasound research system. Acquired ultrasound data and processed
+    ultrasound IQ data to generate ASI-based image reconstructions.
   </p>
 
 
-  <h3>4. Comparison with plane-wave imaging</h3>
+  <h3>4. Comparison with Plane-Wave Imaging</h3>
 
   <p>
     Multi-angle plane-wave imaging was used as a comparison method.
@@ -278,100 +356,203 @@
   </p>
 
 
-  <h3>5. Quantitative evaluation</h3>
+  <h3>5. Quantitative Evaluation</h3>
 
   <p>
     Imaging performance was evaluated using axial and lateral intensity
-    profiles and full width at half maximum (FWHM) measurements.
+    profiles and Full Width at Half Maximum (FWHM) measurements.
   </p>
 
 </section>
 
 
-<!-- ASI PATTERN IMAGE -->
+<!-- ASI PATTERN -->
+
 <section class="project-section">
 
   <h2>ASI Pattern Generation</h2>
 
   <p>
-    The generated acoustic structured illumination patterns were evaluated
-    before experimental imaging. The patterns were designed to produce
-    multiple spatially separated acoustic beams for structured illumination.
+    Multi-beam acoustic structured illumination patterns were generated
+    using phase-retrieval algorithms and evaluated through acoustic field
+    simulation before experimental imaging.
   </p>
+
 
   <img
     src="../TXPD_DeltaD_0.80mm.png"
-    alt="Acoustic Structured Illumination pattern"
+    alt="Multi-beam Acoustic Structured Illumination pattern"
     class="project-image">
 
+
+  <div class="figure-title">
+    Multi-Beam Acoustic Structured Illumination Pattern
+  </div>
+
   <div class="figure-caption">
-    Example multi-beam Acoustic Structured Illumination pattern.
+    Example simulated acoustic structured illumination pattern used in the
+    imaging workflow.
   </div>
 
 </section>
 
 
-<!-- EXPERIMENTAL VALIDATION -->
+<!-- EXPERIMENTAL EVALUATION -->
+
 <section class="project-section">
 
-  <h2>Experimental Validation</h2>
+  <h2>Experimental Evaluation</h2>
 
   <p>
-    The ASI approach was experimentally evaluated using a wire phantom and
-    a Verasonics Vantage ultrasound research system. A 50&nbsp;μm wire target
-    positioned at approximately 15&nbsp;mm depth was used to evaluate the
-    spatial response.
+    The ASI imaging approach was experimentally evaluated using a wire
+    phantom and a Verasonics Vantage ultrasound research system. A
+    <strong>50&nbsp;μm wire phantom</strong> positioned at approximately
+    <strong>15&nbsp;mm depth</strong> was used to evaluate the spatial response.
   </p>
 
   <p>
-    ASI reconstruction was compared with low-resolution and plane-wave
-    imaging. Axial and lateral profiles were extracted through the target,
-    and FWHM was used as a quantitative measure of the response width.
+    The experiment compared three imaging conditions: low-resolution
+    imaging, plane-wave imaging, and ASI imaging. Axial and lateral
+    intensity profiles were then extracted from the resulting images to
+    quantitatively compare the spatial response.
   </p>
 
 
-  <!--
-    Put your phantom-validation screenshot/image in this folder:
-    
-    research/images/asi-validation.png
-    
-    Then the image below will display it.
-  -->
+  <!-- LOW-RESOLUTION PHANTOM IMAGE -->
 
-  <img
-    src="images/asi-validation.png"
-    alt="ASI validation through phantom imaging"
-    class="project-image">
+  <div class="evaluation-item">
 
-  <div class="figure-caption">
-    ASI validation through phantom imaging. Comparison of low-resolution,
-    ASI, and plane-wave responses for a 50&nbsp;μm wire phantom.
+    <h3>
+      Low-Resolution Phantom Image
+    </h3>
+
+    <img
+      src="../Low_resolution_wire_phantom_image.png"
+      alt="Low-resolution wire phantom ultrasound image"
+      class="evaluation-image">
+
+    <div class="figure-caption">
+      Low-resolution ultrasound image of the wire phantom used as the
+      baseline imaging result.
+    </div>
+
+  </div>
+
+
+  <!-- PLANE WAVE PHANTOM IMAGE -->
+
+  <div class="evaluation-item">
+
+    <h3>
+      Plane-Wave Phantom Image
+    </h3>
+
+    <img
+      src="../Plane_wave_wirephantom_image.png"
+      alt="Plane-wave wire phantom ultrasound image"
+      class="evaluation-image">
+
+    <div class="figure-caption">
+      Plane-wave ultrasound reconstruction of the wire phantom used as a
+      comparison with the ASI reconstruction.
+    </div>
+
+  </div>
+
+
+  <!-- ASI PHANTOM IMAGE -->
+
+  <div class="evaluation-item">
+
+    <h3>
+      ASI Phantom Image
+    </h3>
+
+    <img
+      src="../ASI_Wire_phantom_image.png"
+      alt="Acoustic Structured Illumination wire phantom ultrasound image"
+      class="evaluation-image">
+
+    <div class="figure-caption">
+      Acoustic Structured Illumination reconstruction of the wire phantom.
+    </div>
+
+  </div>
+
+
+  <!-- AXIAL PROFILE -->
+
+  <div class="evaluation-item">
+
+    <h3>
+      Axial Resolution — FWHM
+    </h3>
+
+    <img
+      src="../Axial_resolution.png"
+      alt="Axial resolution profile comparing ultrasound imaging methods"
+      class="evaluation-image">
+
+    <div class="figure-caption">
+      Axial intensity profiles through the wire target. FWHM is used as a
+      quantitative measure of the axial spatial response. A smaller FWHM
+      indicates a narrower response and therefore better axial resolution
+      under the evaluated condition.
+    </div>
+
+  </div>
+
+
+  <!-- LATERAL PROFILE -->
+
+  <div class="evaluation-item">
+
+    <h3>
+      Lateral Resolution — FWHM
+    </h3>
+
+    <img
+      src="../Lateral_resolution.png"
+      alt="Lateral resolution profile comparing ultrasound imaging methods"
+      class="evaluation-image">
+
+    <div class="figure-caption">
+      Lateral intensity profiles through the wire target. FWHM is used as a
+      quantitative measure of the lateral spatial response. A smaller FWHM
+      indicates a narrower response and therefore better lateral resolution
+      under the evaluated condition.
+    </div>
+
   </div>
 
 </section>
 
 
 <!-- RESULTS -->
+
 <section class="project-section">
 
   <h2>Results</h2>
 
   <p>
-    For the evaluated phantom condition at approximately 15&nbsp;mm depth
-    and a beam separation of Δd&nbsp;=&nbsp;0.48&nbsp;mm, the ASI reconstruction
-    produced narrower measured axial and lateral responses than the
-    corresponding plane-wave result.
+    For the evaluated phantom condition at approximately
+    <strong>15&nbsp;mm depth</strong> and a beam separation of
+    <strong>Δd = 0.48&nbsp;mm</strong>, the ASI reconstruction produced
+    narrower measured axial and lateral responses than the corresponding
+    plane-wave result.
   </p>
 
 
   <table class="result-table">
 
     <thead>
+
       <tr>
         <th>Metric</th>
         <th>Plane Wave</th>
         <th>ASI</th>
       </tr>
+
     </thead>
 
     <tbody>
@@ -396,21 +577,27 @@
   <div class="result-highlight">
 
     <strong>Example experimental result:</strong>
-    ASI reduced the measured lateral FWHM from approximately
-    501&nbsp;μm to 425&nbsp;μm and the axial FWHM from approximately
-    202&nbsp;μm to 144&nbsp;μm under the evaluated phantom condition.
+    Under the evaluated phantom condition, ASI produced a measured lateral
+    FWHM of approximately <strong>425&nbsp;μm</strong> compared with
+    <strong>501&nbsp;μm</strong> for plane-wave imaging. The measured axial
+    FWHM was approximately <strong>144&nbsp;μm</strong> for ASI compared
+    with <strong>202&nbsp;μm</strong> for plane-wave imaging.
 
   </div>
 
+
   <p>
-    Lower FWHM corresponds to a narrower spatial response and indicates
-    improved spatial resolution for the evaluated condition.
+    FWHM (Full Width at Half Maximum) was used as a quantitative measure of
+    spatial resolution. In this evaluation, the smaller FWHM values
+    correspond to narrower spatial responses and improved resolution for
+    the evaluated condition.
   </p>
 
 </section>
 
 
 <!-- MY CONTRIBUTION -->
+
 <section class="project-section">
 
   <h2>My Contribution</h2>
@@ -438,12 +625,16 @@
     </li>
 
     <li>
-      Evaluated imaging performance using axial and lateral FWHM
-      measurements.
+      Extracted axial and lateral intensity profiles from reconstructed
+      images.
     </li>
 
     <li>
-      Compared ASI imaging performance with multi-angle plane-wave imaging.
+      Evaluated spatial resolution using FWHM measurements.
+    </li>
+
+    <li>
+      Compared ASI imaging performance with plane-wave imaging.
     </li>
 
   </ul>
@@ -452,6 +643,7 @@
 
 
 <!-- TOOLS -->
+
 <section class="project-section">
 
   <h2>Tools &amp; Technologies</h2>
@@ -465,7 +657,8 @@
 </section>
 
 
-<!-- FULL REPORT -->
+<!-- PROJECT DOCUMENTATION -->
+
 <section class="project-section">
 
   <h2>Project Documentation</h2>
@@ -481,12 +674,14 @@
 
 </section>
 
+
 </main>
 
 
 <footer>
   © 2026 Faria Rahman · Electrical &amp; Computer Engineering · University of Oklahoma
 </footer>
+
 
 <script src="../script.js"></script>
 
